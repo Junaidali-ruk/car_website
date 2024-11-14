@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Web Design Mastery | Car Rental</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav__header">
+          <div class="nav__logo">
+            <a href="#" class="logo">
+              <img src="assets/logo-white.png" alt="logo" class="logo-white" />
+              <img src="assets/logo-dark.png" alt="logo" class="logo-dark" />
+              <span>Car Rental</span>
+            </a>
+          </div>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#deals">Rental Deals</a></li>
+          <li><a href="#choose">Why Choose Us</a></li>
+          <li><a href="#client">Testimonials</a></li>
+          <li><a href="#">Register</a></li>
+        </ul>
+        <div class="nav__btns">
+          <button class="btn">Register</button>
+        </div>
+      </nav>
+      <div class="header__container" id="home">
+        <div class="header__image">
+          <img src="assets/header.png" alt="header" />
+        </div>
+        <div class="header__content">
+          <h2>👍 100% Trusted car rental platform in India</h2>
+          <h1>FAST AND EASY WAY TO RENT A CAR</h1>
+          <p class="section__description">
+            Discover a seamless car rental experience with us. Choose from a
+            range of premium vehicles to suit your style and needs, and hit the
+            road with confidence. Quick, easy, and reliable - rent your ride
+            today!
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <section class="header__form">
+      <form action="/">
+        <div class="input__group">
+          <label for="location">Pick up & Return location</label>
+          <input
+            type="text"
+            name="location"
+            id="location"
+            placeholder="Dallas, Texas"
+          />
+        </div>
+        <div class="input__group">
+          <label for="start">Pick up date</label>
+          <input
+            type="text"
+            name="start"
+            id="start"
+            placeholder="Aug 16, 10:00 AM"
+          />
+        </div>
+        <div class="input__group">
+          <label for="stop">Return date</label>
+          <input
+            type="text"
+            name="stop"
+            id="stop"
+            placeholder="Aug 18, 10:00 PM"
+          />
+        </div>
+        <button class="btn">Search <i class="ri-search-line"></i></button>
+      </form>
+    </section>
+
+    <section class="section__container about__container" id="about">
+      <h2 class="section__header">How it work</h2>
+      <p class="section__description">
+        Renting a car with us is simple! Choose your vehicle, pick your dates,
+        and complete your booking. We'll handle the rest, ensuring a smooth
+        start to your journey.
+      </p>
+      <div class="about__grid">
+        <div class="about__card">
+          <span><i class="ri-map-pin-2-fill"></i></span>
+          <h4>Choose Location</h4>
+          <p>
+            Select from a variety of pick-up locations that best suit your
+            needs, whether it's close to home, work, or airport.
+          </p>
+        </div>
+        <div class="about__card">
+          <span><i class="ri-calendar-event-fill"></i></span>
+          <h4>Pick-up Date</h4>
+          <p>
+            Choose the exact date and time for your car pick-up, ensuring that
+            your vehicle is ready when you need it.
+          </p>
+        </div>
+        <div class="about__card">
+          <span><i class="ri-roadster-fill"></i></span>
+          <h4>Book your Car</h4>
+          <p>
+            Complete your booking with just a few clicks, and we'll prepare your
+            vehicle to ensure a hassle-free pick-up.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="deals" id="deals">
+      <div class="section__container deals__container">
+        <h2 class="section__header">Most popular car rental deals</h2>
+        <p class="section__description">
+          Explore our top car rental deals, handpicked to give you the best
+          value and experience. Book now and drive your favorite ride at an
+          incredible rate!
+        </p>
+        <div class="deals__tabs">
+          <button class="btn active" data-id="Tesla">Tesla</button>
+          <button class="btn" data-id="Mitsubishi">Mitsubishi</button>
+          <button class="btn" data-id="Mazda">Mazda</button>
+          <button class="btn" data-id="Toyota">Toyota</button>
+          <button class="btn" data-id="Honda">Honda</button>
+        </div>
+        <div id="Tesla" class="tab__content active">
+          <div class="deals__card">
+            <img src="assets/deals-1.png" alt="deals" />
+            <div class="deals__rating">
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-line"></i></span>
+              <span>(550)</span>
+            </div>
+            <h4>Tesla Model S</h4>
+            <div class="deals__card__grid">
+              <div>
+                <span><i class="ri-group-line"></i></span> 4 People
+              </div>
+              <div>
+                <span><i class="ri-steering-2-line"></i></span> Autopilot
+              </div>
+              <div>
+                <span><i class="ri-speed-up-line"></i></span> 400km
+              </div>
+              <div>
+                <span><i class="ri-car-line"></i></span> Electric
+              </div>
+            </div>
+            <hr />
+            <div class="deals__card__footer">
+              <h3>$180<span>/Per Day</span></h3>
+              <a href="#">
+                Rent Now
+                <span><i class="ri-arrow-right-line"></i></span>
+              </a>
+            </div>
+          </div>
+          <div class="deals__card">
+            <img src="assets/deals-2.png" alt="deals" />
+            <div class="deals__rating">
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-line"></i></span>
+              <span>(450)</span>
+            </div>
+            <h4>Tesla Model E</h4>
+            <div class="deals__card__grid">
+              <div>
+                <span><i class="ri-group-line"></i></span> 4 People
+              </div>
+              <div>
+                <span><i class="ri-steering-2-line"></i></span> Autopilot
+              </div>
+              <div>
+                <span><i class="ri-speed-up-line"></i></span> 400km
+              </div>
+              <div>
+                <span><i class="ri-car-line"></i></span> Electric
+              </div>
+            </div>
+            <hr />
+            <div class="deals__card__footer">
+              <h3>$150<span>/Per Day</span></h3>
+              <a href="#">
+                Rent Now
+                <span><i class="ri-arrow-right-line"></i></span>
+              </a>
+            </div>
+          </div>
+          <div class="deals__card">
+            <img src="assets/deals-3.png" alt="deals" />
+            <div class="deals__rating">
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-line"></i></span>
+              <span>(550)</span>
+            </div>
+            <h4>Tesla Model Y</h4>
+            <div class="deals__card__grid">
+              <div>
+                <span><i class="ri-group-line"></i></span> 4 People
+              </div>
+              <div>
+                <span><i class="ri-steering-2-line"></i></span> Autopilot
+              </div>
+              <div>
+                <span><i class="ri-speed-up-line"></i></span> 400km
+              </div>
+              <div>
+                <span><i class="ri-car-line"></i></span> Electric
+              </div>
+            </div>
+            <hr />
+            <div class="deals__card__footer">
+              <h3>$200<span>/Per Day</span></h3>
+              <a href="#">
+                Rent Now
+                <span><i class="ri-arrow-right-line"></i></span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div id="Mitsubishi" class="tab__content">
+          <div class="deals__card">
+            <img src="assets/deals-4.png" alt="deals" />
+            <div class="deals__rating">
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-line"></i></span>
+              <span>(350)</span>
+            </div>
+            <h4>Mirage</h4>
+            <div class="deals__card__grid">
+              <div>
+                <span><i class="ri-group-line"></i></span> 4 People
+              </div>
+              <div>
+                <span><i class="ri-steering-2-line"></i></span> Manual
+              </div>
+              <div>
+                <span><i class="ri-speed-up-line"></i></span> 18km/l
+              </div>
+              <div>
+                <span><i class="ri-car-line"></i></span> Diesel
+              </div>
+            </div>
+            <hr />
+            <div class="deals__card__footer">
+              <h3>$120<span>/Per Day</span></h3>
+              <a href="#">
+                Rent Now
+                <span><i class="ri-arrow-right-line"></i></span>
+              </a>
+            </div>
+          </div>
+          <div class="deals__card">
+            <img src="assets/deals-5.png" alt="deals" />
+            <div class="deals__rating">
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-line"></i></span>
+              <span>(250)</span>
+            </div>
+            <h4>Xpander</h4>
+            <div class="deals__card__grid">
+              <div>
+                <span><i class="ri-group-line"></i></span> 4 People
+              </div>
+              <div>
+                <span><i class="ri-steering-2-line"></i></span> Manual
+              </div>
+              <div>
+                <span><i class="ri-speed-up-line"></i></span> 18km/l
+              </div>
+              <div>
+                <span><i class="ri-car-line"></i></span> Diesel
+              </div>
+            </div>
+            <hr />
+            <div class="deals__card__footer">
+              <h3>$150<span>/Per Day</span></h3>
+              <a href="#">
+                Rent Now
+                <span><i class="ri-arrow-right-line"></i></span>
+              </a>
+            </div>
+          </div>
+          <div class="deals__card">
+            <img src="assets/deals-6.png" alt="deals" />
+            <div class="deals__rating">
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-line"></i></span>
+              <span>(150)</span>
+            </div>
+            <h4>Pajero Sports</h4>
+            <div class="deals__card__grid">
+              <div>
+                <span><i class="ri-group-line"></i></span> 4 People
+              </div>
+              <div>
+                <span><i class="ri-steering-2-line"></i></span> Manual
+              </div>
+              <div>
+                <span><i class="ri-speed-up-line"></i></span> 18km/l
+              </div>
+              <div>
+                <span><i class="ri-car-line"></i></span> Diesel
+              </div>
+            </div>
+            <hr />
+            <div class="deals__card__footer">
+              <h3>$180<span>/Per Day</span></h3>
+              <a href="#">
+                Rent Now
+                <span><i class="ri-arrow-right-line"></i></span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div id="Mazda" class="tab__content">
+          <div class="deals__card">
+            <img src="assets/deals-7.png" alt="deals" />
+            <div class="deals__rating">
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-line"></i></span>
+              <span>(200)</span>
+            </div>
+            <h4>Mazda CX5</h4>
+            <div class="deals__card__grid">
+              <div>
+                <span><i class="ri-group-line"></i></span> 4 People
+              </div>
+              <div>
+                <span><i class="ri-steering-2-line"></i></span> Manual
+              </div>
+              <div>
+                <span><i class="ri-speed-up-line"></i></span> 18km/l
+              </div>
+              <div>
+                <span><i class="ri-car-line"></i></span> Diesel
+              </div>
+            </div>
+            <hr />
+            <div class="deals__card__footer">
+              <h3>$130<span>/Per Day</span></h3>
+              <a href="#">
+                Rent Now
+                <span><i class="ri-arrow-right-line"></i></span>
+              </a>
+            </div>
+          </div>
+          <div class="deals__card">
+            <img src="assets/deals-8.png" alt="deals" />
+            <div class="deals__rating">
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-line"></i></span>
+              <span>(100)</span>
+            </div>
+            <h4>Mazda CX-30</h4>
+            <div class="deals__card__grid">
+              <div>
+                <span><i class="ri-group-line"></i></span> 4 People
+              </div>
+              <div>
+                <span><i class="ri-steering-2-line"></i></span> Manual
+              </div>
+              <div>
+                <span><i class="ri-speed-up-line"></i></span> 18km/l
+              </div>
+              <div>
+                <span><i class="ri-car-line"></i></span> Diesel
+              </div>
+            </div>
+            <hr />
+            <div class="deals__card__footer">
+              <h3>$200<span>/Per Day</span></h3>
+              <a href="#">
+                Rent Now
+                <span><i class="ri-arrow-right-line"></i></span>
+              </a>
+            </div>
+          </div>
+          <div class="deals__card">
+            <img src="assets/deals-9.png" alt="deals" />
+            <div class="deals__rating">
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-line"></i></span>
+              <span>(180)</span>
+            </div>
+            <h4>Mazda CX-9</h4>
+            <div class="deals__card__grid">
+              <div>
+                <span><i class="ri-group-line"></i></span> 4 People
+              </div>
+              <div>
+                <span><i class="ri-steering-2-line"></i></span> Manual
+              </div>
+              <div>
+                <span><i class="ri-speed-up-line"></i></span> 18km/l
+              </div>
+              <div>
+                <span><i class="ri-car-line"></i></span> Diesel
+              </div>
+            </div>
+            <hr />
+            <div class="deals__card__footer">
+              <h3>$180<span>/Per Day</span></h3>
+              <a href="#">
+                Rent Now
+                <span><i class="ri-arrow-right-line"></i></span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div id="Toyota" class="tab__content">
+          <div class="deals__card">
+            <img src="assets/deals-10.png" alt="deals" />
+            <div class="deals__rating">
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-line"></i></span>
+              <span>(250)</span>
+            </div>
+            <h4>Corolla</h4>
+            <div class="deals__card__grid">
+              <div>
+                <span><i class="ri-group-line"></i></span> 4 People
+              </div>
+              <div>
+                <span><i class="ri-steering-2-line"></i></span> Manual
+              </div>
+              <div>
+                <span><i class="ri-speed-up-line"></i></span> 18km/l
+              </div>
+              <div>
+                <span><i class="ri-car-line"></i></span> Diesel
+              </div>
+            </div>
+            <hr />
+            <div class="deals__card__footer">
+              <h3>$180<span>/Per Day</span></h3>
+              <a href="#">
+                Rent Now
+                <span><i class="ri-arrow-right-line"></i></span>
+              </a>
+            </div>
+          </div>
+          <div class="deals__card">
+            <img src="assets/deals-11.png" alt="deals" />
+            <div class="deals__rating">
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-line"></i></span>
+              <span>(550)</span>
+            </div>
+            <h4>Innova</h4>
+            <div class="deals__card__grid">
+              <div>
+                <span><i class="ri-group-line"></i></span> 4 People
+              </div>
+              <div>
+                <span><i class="ri-steering-2-line"></i></span> Manual
+              </div>
+              <div>
+                <span><i class="ri-speed-up-line"></i></span> 18km/l
+              </div>
+              <div>
+                <span><i class="ri-car-line"></i></span> Diesel
+              </div>
+            </div>
+            <hr />
+            <div class="deals__card__footer">
+              <h3>$150<span>/Per Day</span></h3>
+              <a href="#">
+                Rent Now
+                <span><i class="ri-arrow-right-line"></i></span>
+              </a>
+            </div>
+          </div>
+          <div class="deals__card">
+            <img src="assets/deals-12.png" alt="deals" />
+            <div class="deals__rating">
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-line"></i></span>
+              <span>(180)</span>
+            </div>
+            <h4>Fortuner</h4>
+            <div class="deals__card__grid">
+              <div>
+                <span><i class="ri-group-line"></i></span> 4 People
+              </div>
+              <div>
+                <span><i class="ri-steering-2-line"></i></span> Manual
+              </div>
+              <div>
+                <span><i class="ri-speed-up-line"></i></span> 18km/l
+              </div>
+              <div>
+                <span><i class="ri-car-line"></i></span> Diesel
+              </div>
+            </div>
+            <hr />
+            <div class="deals__card__footer">
+              <h3>$190<span>/Per Day</span></h3>
+              <a href="#">
+                Rent Now
+                <span><i class="ri-arrow-right-line"></i></span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div id="Honda" class="tab__content">
+          <div class="deals__card">
+            <img src="assets/deals-13.png" alt="deals" />
+            <div class="deals__rating">
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-line"></i></span>
+              <span>(200)</span>
+            </div>
+            <h4>Amaze</h4>
+            <div class="deals__card__grid">
+              <div>
+                <span><i class="ri-group-line"></i></span> 4 People
+              </div>
+              <div>
+                <span><i class="ri-steering-2-line"></i></span> Manual
+              </div>
+              <div>
+                <span><i class="ri-speed-up-line"></i></span> 18km/l
+              </div>
+              <div>
+                <span><i class="ri-car-line"></i></span> Diesel
+              </div>
+            </div>
+            <hr />
+            <div class="deals__card__footer">
+              <h3>$100<span>/Per Day</span></h3>
+              <a href="#">
+                Rent Now
+                <span><i class="ri-arrow-right-line"></i></span>
+              </a>
+            </div>
+          </div>
+          <div class="deals__card">
+            <img src="assets/deals-14.png" alt="deals" />
+            <div class="deals__rating">
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-line"></i></span>
+              <span>(350)</span>
+            </div>
+            <h4>Elevate</h4>
+            <div class="deals__card__grid">
+              <div>
+                <span><i class="ri-group-line"></i></span> 4 People
+              </div>
+              <div>
+                <span><i class="ri-steering-2-line"></i></span> Manual
+              </div>
+              <div>
+                <span><i class="ri-speed-up-line"></i></span> 18km/l
+              </div>
+              <div>
+                <span><i class="ri-car-line"></i></span> Diesel
+              </div>
+            </div>
+            <hr />
+            <div class="deals__card__footer">
+              <h3>$120<span>/Per Day</span></h3>
+              <a href="#">
+                Rent Now
+                <span><i class="ri-arrow-right-line"></i></span>
+              </a>
+            </div>
+          </div>
+          <div class="deals__card">
+            <img src="assets/deals-15.png" alt="deals" />
+            <div class="deals__rating">
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-line"></i></span>
+              <span>(300)</span>
+            </div>
+            <h4>City</h4>
+            <div class="deals__card__grid">
+              <div>
+                <span><i class="ri-group-line"></i></span> 4 People
+              </div>
+              <div>
+                <span><i class="ri-steering-2-line"></i></span> Manual
+              </div>
+              <div>
+                <span><i class="ri-speed-up-line"></i></span> 18km/l
+              </div>
+              <div>
+                <span><i class="ri-car-line"></i></span> Diesel
+              </div>
+            </div>
+            <hr />
+            <div class="deals__card__footer">
+              <h3>$150<span>/Per Day</span></h3>
+              <a href="#">
+                Rent Now
+                <span><i class="ri-arrow-right-line"></i></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="choose__container" id="choose">
+      <div class="choose__image">
+        <img src="assets/choose.png" alt="choose" />
+      </div>
+      <div class="choose__content">
+        <h2 class="section__header">Why choose us</h2>
+        <p class="section__description">
+          Discover the difference with our car rental service. We offer reliable
+          vehicles, exceptional customer service, and competitive pricing to
+          ensure a seamless rental experience.
+        </p>
+        <div class="choose__grid">
+          <div class="choose__card">
+            <span><i class="ri-customer-service-line"></i></span>
+            <div>
+              <h4>Customer Support</h4>
+              <p>Our dedicated support team is available to assist you 24/7.</p>
+            </div>
+          </div>
+          <div class="choose__card">
+            <span><i class="ri-map-pin-line"></i></span>
+            <div>
+              <h4>Many Locations</h4>
+              <p>
+                Convenient pick-up and drop-off locations to suit your travel
+                needs.
+              </p>
+            </div>
+          </div>
+          <div class="choose__card">
+            <span><i class="ri-wallet-line"></i></span>
+            <div>
+              <h4>Best Price</h4>
+              <p>Enjoy competitive rates and great value for every rental.</p>
+            </div>
+          </div>
+          <div class="choose__card">
+            <span><i class="ri-user-star-line"></i></span>
+            <div>
+              <h4>Experience Driver</h4>
+              <p>Reliable, professional drivers available upon request.</p>
+            </div>
+          </div>
+          <div class="choose__card">
+            <span><i class="ri-verified-badge-line"></i></span>
+            <div>
+              <h4>Verified Brands</h4>
+              <p>Choose from trusted and well-maintained car brands.</p>
+            </div>
+          </div>
+          <div class="choose__card">
+            <span><i class="ri-calendar-close-line"></i></span>
+            <div>
+              <h4>Free Cancellations</h4>
+              <p>Flexible bookings with free cancellation options.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="subscribe__container">
+      <div class="subscribe__image">
+        <img src="assets/subscribe.png" alt="subscribe" />
+      </div>
+      <div class="subscribe__content">
+        <h2 class="section__header">
+          Subscribe for the latest car rental updates
+        </h2>
+        <p class="section__description">
+          Stay in the know! Subscribe to receive the latest car rental deals,
+          exclusive offers, and updates right to your inbox. Don't miss out on
+          special promotions and the newest additions to our fleet.
+        </p>
+        <form action="/">
+          <input type="text" placeholder="Your Email" />
+          <button class="btn">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="section__container client__container" id="client">
+      <h2 class="section__header">What people say about us?</h2>
+      <p class="section__description">
+        Discover why our customers love renting with us! Read real reviews and
+        testimonials to see how we deliver exceptional service.
+      </p>
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="client__card">
+              <div class="client__details">
+                <img src="assets/client-1.jpg" alt="client" />
+                <div>
+                  <h4>Sarah Johnson</h4>
+                  <div class="client__rating">
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-line"></i></span>
+                  </div>
+                </div>
+              </div>
+              <p>
+                I had an amazing experience renting a car from this service. The
+                booking process was quick and easy, and the car was in perfect
+                condition. Highly recommend!
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="client__card">
+              <div class="client__details">
+                <img src="assets/client-2.jpg" alt="client" />
+                <div>
+                  <h4>Michael Adams</h4>
+                  <div class="client__rating">
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-line"></i></span>
+                  </div>
+                </div>
+              </div>
+              <p>
+                Customer support was excellent! They helped me with all my
+                questions, and I felt confident about my booking. I will
+                definitely rent from them again.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="client__card">
+              <div class="client__details">
+                <img src="assets/client-3.jpg" alt="client" />
+                <div>
+                  <h4>Emily Martinez</h4>
+                  <div class="client__rating">
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-line"></i></span>
+                  </div>
+                </div>
+              </div>
+              <p>
+                Affordable prices and great selection of vehicles! I found
+                exactly what I needed, and the pick-up and drop-off process was
+                seamless. Very happy with my rental.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="client__card">
+              <div class="client__details">
+                <img src="assets/client-4.jpg" alt="client" />
+                <div>
+                  <h4>Jason Lee</h4>
+                  <div class="client__rating">
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-line"></i></span>
+                  </div>
+                </div>
+              </div>
+              <p>
+                The flexibility of free cancellations made my trip stress-free.
+                I ended up changing my plans, and it was no hassle to adjust my
+                booking. Great service overall!
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="client__card">
+              <div class="client__details">
+                <img src="assets/client-5.jpg" alt="client" />
+                <div>
+                  <h4>David Thompson</h4>
+                  <div class="client__rating">
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-line"></i></span>
+                  </div>
+                </div>
+              </div>
+              <p>
+                The car I rented was top-notch, and the driver was very
+                experienced. It made my road trip so much more enjoyable. Will
+                use them again next time!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="footer__logo">
+            <a href="#" class="logo">
+              <img src="assets/logo-white.png" alt="logo" />
+              <span>Car Rental</span>
+            </a>
+          </div>
+          <p>
+            We're here to provide you with the best vehicles and a seamless
+            rental experience. Stay connected for updates, special offers, and
+            more. Drive with confidence!
+          </p>
+          <ul class="footer__socials">
+            <li>
+              <a href="#"><i class="ri-facebook-fill"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-twitter-fill"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-linkedin-fill"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-instagram-line"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-youtube-fill"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Our Services</h4>
+          <ul class="footer__links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#deals">Rental Deals</a></li>
+            <li><a href="#choose">Why Choose Us</a></li>
+            <li><a href="#client">Testimonials</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Vehicle Model</h4>
+          <ul class="footer__links">
+            <li><a href="#">Toyota Corolla</a></li>
+            <li><a href="#">Toyota Noah</a></li>
+            <li><a href="#">Toyota Allion</a></li>
+            <li><a href="#">Toyota Premio</a></li>
+            <li><a href="#">Mistubishi Pajero</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Contact</h4>
+          <ul class="footer__links">
+            <li>
+              <a href="#">
+                <span><i class="ri-phone-fill"></i></span> +91 0987654321
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><i class="ri-map-pin-fill"></i></span> New Delhi, India
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><i class="ri-mail-fill"></i></span> info@carrental
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2024 Web Design Mastery. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
